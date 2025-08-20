@@ -1,0 +1,1 @@
+export {default as ChatsSidebar} from "./components/ChatsSidebar/ChatsSidebar";

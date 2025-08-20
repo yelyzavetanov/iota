@@ -1,30 +1,20 @@
 'use client';
 
-import Button from "@/shared/components/Button";
-import Input from "@/shared/components/Input";
 import Sidebar from "@/shared/components/Sidebar";
-import ChatsSidebar from "@/features/chatsSidebar/components/ChatsSidebar/ChatsSidebar";
+import {ChatsSidebar} from "@/features/chatsSidebar";
+import {MainChat} from "@/features/mainChat";
+import Main from "@/shared/components/Main";
 
 
 export default function Home() {
     return (
-        <div className="flex items-stretch justify-between w-full h-screen gap-2 box-border">
+        <div className="flex items-stretch justify-between w-full h-screen box-border">
             <Sidebar>
                 <ChatsSidebar/>
             </Sidebar>
-            <main>
-                <Button
-                    className={"m-5"}
-                    onClick={() => alert("button")}
-                >
-                    button
-                </Button>
-                <Input placeholder={"hehe hehe"} onChange={(e) => alert(e.target.value)} />
-                <p>this is p</p>
-                <a>this is a</a>
-
-                <p className={"text-accent"}>hehe test text yyyyy</p>
-            </main>
+            <Main>
+                <MainChat/>
+            </Main>
         </div>
     );
 }

@@ -1,0 +1,1 @@
+export {default as MainChat} from './components/MainChat/MainChat';
