@@ -22,6 +22,7 @@ export default function Home() {
                 <Input placeholder={"hehe hehe"} onChange={(e) => alert(e.target.value)} />
                 <p>this is p</p>
                 <a>this is a</a>
+
                 <p className={"text-accent"}>hehe test text yyyyy</p>
             </main>
         </div>
