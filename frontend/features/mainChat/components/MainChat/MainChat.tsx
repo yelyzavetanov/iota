@@ -2,6 +2,7 @@ import React from 'react';
 import ChatHeader from "../ChatHeader/ChatHeader";
 import {mockMessages} from "../../mocks";
 import MessagesContainer from "../MessagesContainer/MessagesContainer";
+import MainInput from "@/features/mainChat/components/MainInput/MainInput";
 
 
 const MainChat = () => {
@@ -12,6 +13,7 @@ const MainChat = () => {
         <div className="h-full flex flex-col box-border">
             <ChatHeader currentChatUserName={"My friend"}/>
             <MessagesContainer messages={mockMessages} currentUserId={currentUserId}/>
+            <MainInput/>
         </div>
     )
 }
