@@ -11,7 +11,7 @@ const MainChat = () => {
 
     return (
         <div className="h-full flex flex-col box-border">
-            <ChatHeader currentChatUserName={"My friend"}/>
+            <ChatHeader currentChatUserName={"My friend"} currentUserOnline={"Online!"}/>
             <MessagesContainer messages={mockMessages} currentUserId={currentUserId}/>
             <MainInput/>
         </div>

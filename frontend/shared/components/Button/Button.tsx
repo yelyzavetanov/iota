@@ -7,13 +7,16 @@ import clsx from 'clsx';
 const variantClasses = {
     primary: 'button',
     secondary: 'button-secondary',
+    disabled: 'button-disabled',
 };
 
-const Button = ({children, variant = 'primary', className, ...props}: ButtonProps) => {
+const Button = ({children, variant = 'secondary', className, ...props}: ButtonProps) => {
+    
     return (
         <button
             className={clsx(variantClasses[variant], className)}
             {...props}
+            disabled={variant === "disabled"}
         >
             {children}
         </button>

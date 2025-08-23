@@ -5,7 +5,10 @@ import { SidebarProps } from './types';
 
 const Sidebar = ({children}: SidebarProps) => {
     return (
-        <div className={"border-regular box-border h-full md:w-1/4 max-w-[400px] w-full flex flex-col items-stretch justify-start"}>
+        <div className={
+            "border-regular box-border h-full md:w-1/4 max-w-[400px] w-full " +
+            "flex flex-col items-stretch justify-start min-w-[350px]"
+        }>
             {children}
         </div>
     )
