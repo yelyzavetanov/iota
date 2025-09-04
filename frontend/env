@@ -1,0 +1,10 @@
+# ----------------------------
+# Next.js config
+# ----------------------------
+NODE_ENV=development
+PORT=3000
+
+# ----------------------------
+# API URL (через Nginx)
+# ----------------------------
+NEXT_PUBLIC_API_URL=http://localhost/api

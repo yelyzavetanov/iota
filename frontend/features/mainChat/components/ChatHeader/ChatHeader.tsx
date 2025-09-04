@@ -11,7 +11,7 @@ const ChatHeader =  (
             <ProfilePicture src={currentChatUserAvatar}/>
             <div>
                 <div className={"text-accent"}>{currentChatUserName}</div>
-                <div className={"text-accent text-sm opacity-70"}>{currentUserOnline}</div>
+                <div className={"text-accent text-sm opacity-50"}>{currentUserOnline}</div>
             </div>
         </div>
     )
